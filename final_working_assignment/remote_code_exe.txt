@@ -1,0 +1,9 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-04-23 11:31 EDT
+Nmap scan report for 192.168.1.104
+Host is up (0.00048s latency).
+
+PORT    STATE  SERVICE
+445/tcp closed microsoft-ds
+MAC Address: 00:0C:29:A4:61:CF (VMware)
+
+Nmap done: 1 IP address (1 host up) scanned in 13.39 seconds
