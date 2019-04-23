@@ -1,2 +1,5 @@
 # Key-Punchers#
-Run File at own risk
+Run files at own risk. 
+This is for education purposes only. 
+run in an enclosed enviroment. 
+
